@@ -5,8 +5,11 @@ function App() {
   return (
     <>
       <Person></Person>
-     
       <Stack></Stack>
+      <br />
+      <Developer name="Sakil" tech="HTML,CSS,TAILWIND" ></Developer>
+      <Developer name="Sabbir" tech="Javascript,React" ></Developer>
+      <Developer name="Abdus Sattar" tech="React,Next.js" ></Developer>
     </>
   )
 }
@@ -17,17 +20,26 @@ function Person() {
   )
 }
 
+function Stack() {
+  return (
+    <div>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Tailwind</li>
+      <li>DaisyUi</li>
+    </div>
 
-function Stack(){
+  )
+}
+
+function Developer(props){
   return(
-    <>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>React</li>
-    <li>Tailwind</li>
-    <li>DaisyUi</li>
-    </>
+    <div className='stack'>
+      <h1>Developer: {props.name}</h1>
+      <p>Technology: {props.tech}</p>
+    </div>
   )
 }
 
