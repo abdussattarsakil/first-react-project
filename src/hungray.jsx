@@ -5,8 +5,8 @@
 
 // }
 
-export default function ToDo({ isDeveloper, namePrefix, nameSuffix }) {
+export default function ToDo({ isDeveloper, namePrefix, nameSuffix ,time}) {
 
-    return isDeveloper ? <p>{namePrefix} {nameSuffix}</p> : <p>{nameSuffix}</p>
+    return isDeveloper ? <p>{namePrefix} {nameSuffix} -Duration {time?time:100}</p> : <p>{nameSuffix} - not a programmer</p>
 
 }

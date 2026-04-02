@@ -2,7 +2,7 @@
 import './App.css'
 import ToDo from './hungray';
 
-
+ 
 function App() {
   return (
     <>
@@ -11,10 +11,10 @@ function App() {
       <Stack></Stack>
       <br />
       <Developer name="Sakil" tech="HTML,CSS,TAILWIND" ></Developer>
-      <Developer name="Sabbir" tech="Javascript,React" ></Developer>
+      <Developer name="Samim" tech="Javascript,React" ></Developer>
       <Developer name="Abdus Sattar" tech="React,Next.js" ></Developer>
 
-      <ToDo isDeveloper={true} namePrefix="WebDev" nameSuffix="Sakil" ></ToDo>
+      <ToDo isDeveloper={true} namePrefix="WebDev" nameSuffix="Sakil" time='6 months' ></ToDo>
       <ToDo isDeveloper={false} namePrefix="WebDev" nameSuffix="Sakil" ></ToDo>
       
     </>
