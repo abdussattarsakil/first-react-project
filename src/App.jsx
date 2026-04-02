@@ -1,11 +1,19 @@
 
 import './App.css'
 import ToDo from './hungray';
+import Actor from './Actor';
 
 
 function App() {
+
+  const actors = ['Afran Nisho', 'Totini', 'Baker vai ', 'Chanchal', 'Tasnia Farin', 'Tahsan Khan'];
+
   return (
     <>
+
+      {
+        actors.map(actor => <Actor name={actor} ></Actor>)
+      }
 
       <Person></Person>
       <Stack></Stack>
