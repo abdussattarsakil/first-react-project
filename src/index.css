@@ -51,9 +51,14 @@
 }
 
 body {
-  margin: 0;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
 }
 
+li{
+      list-style: none;
+}
 #root {
   width: 1126px;
   max-width: 100%;

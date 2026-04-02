@@ -2,7 +2,7 @@
 import './App.css'
 import ToDo from './hungray';
 
- 
+
 function App() {
   return (
     <>
@@ -16,14 +16,16 @@ function App() {
 
       <ToDo isDeveloper={true} namePrefix="WebDev" nameSuffix="Sakil" time='6 months' ></ToDo>
       <ToDo isDeveloper={false} namePrefix="WebDev" nameSuffix="Sakil" ></ToDo>
-      
+
     </>
   )
 }
 
 function Person() {
   return (
-    <h1>WebDev Sakil</h1>
+    <>
+      <h1>WebDev Sakil</h1>
+    </>
   )
 }
 
